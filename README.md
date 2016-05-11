@@ -13,8 +13,8 @@ Role Variables
 
 In the current version, you can specify the following variables:
 
-| Name | Default | |
-|------|---------|-|
+| Name | Default |   |
+|------|---------|---|
 | .name |   ---   | Name entry recorded in crontab, must be unique to hash |
 | .minute |   ---   | Cron minute |
 | .hour |   ---   | Cron hour |
