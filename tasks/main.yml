@@ -1,0 +1,14 @@
+---
+- name: Create cron jobs
+  cron:
+    name: "{{ item.name }}"
+    minute: "{{ item.minute}}"
+    hour: "{{ item.hour }}"
+    day: "{{ item.day }}"
+    month: "{{ item.month }}"
+    weekday: "{{ item.weekday }}"
+    job: "{{ item.job }}"
+    user: "{{ item.user }}"
+    state: "{{ item.state }}"
+  with_items: cron_jobs
+  tags: "cron"
